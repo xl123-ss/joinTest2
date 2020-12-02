@@ -6,4 +6,88 @@
     android:layout_height="match_parent"
     tools:context=".ui.activity.DataAnalyze">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@mipmap/ic_launcher"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实时监测"
+            android:textSize="35sp"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+        android:id="@+id/tv_temprature"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/shape_selected"
+        android:layout_margin="5dp"
+        android:onClick="dosubmit" />
+
+        <TextView
+            android:id="@+id/tv_pm25"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/shape_unselected"
+            android:layout_margin="5dp"
+            android:onClick="dosubmit" />
+
+
+        <TextView
+            android:id="@+id/tv_cq2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/shape_unselected"
+            android:layout_margin="5dp"
+            android:onClick="dosubmit" />
+        <TextView
+            android:id="@+id/tv_road"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/shape_unselected"
+            android:layout_margin="5dp"
+            android:onClick="dosubmit" />
+        <TextView
+            android:id="@+id/tv_humidity"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/shape_unselected"
+            android:layout_margin="5dp"
+            android:onClick="dosubmit" />
+        <TextView
+            android:id="@+id/tv_light"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/shape_unselected"
+            android:layout_margin="5dp"
+            android:onClick="dosubmit" />
+
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
